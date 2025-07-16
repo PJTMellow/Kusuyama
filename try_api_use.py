@@ -1,7 +1,7 @@
 # Gemini API 試し
 import google.generativeai as genai
 
-api_key = "AIzaSyBcLqmexB1vIvrJBwyjq1U0EtNLRAqHa-0"
+api_key = ""
 genai.configure(api_key=api_key)
 
 # 使用するモデルを選択
@@ -18,7 +18,7 @@ print(response.text)
 from openai import OpenAI
 
 # OpenAI APIキーの設定
-api_key = "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"
+api_key = ""
 client = OpenAI(api_key=api_key)
 
 # テキスト生成をリクエスト
@@ -36,7 +36,7 @@ print(response.choices[0].message.content)
 !pip install anthropic
 
 from anthropic import Anthropic
-api_key = "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"
+api_key = ""
 client = Anthropic(api_key=api_key)
 # テキスト生成をリクエスト
 response = client.messages.create(
